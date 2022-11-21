@@ -1,4 +1,4 @@
-package Pratice2;
+package Practice2.Bai1;
 
 import java.util.ArrayList;
 import java.util.HashMap;

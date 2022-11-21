@@ -1,4 +1,4 @@
-package Pratice2.Bai2;
+package Practice2.Bai2;
 
 import java.util.Scanner;
 
@@ -22,13 +22,10 @@ public class Main {
                     break;
                 case 4:
                     doSortAverageScoreraise(studentService);
-
                     break;
-               case 5 :
-                   doSortAverageScorereduce(studentService);
+                case 5:
+                    doSortAverageScorereduce(studentService);
                     break;
-//                case 6 :
-//                    break;
                 default:
                     System.exit(0);
                     break;
@@ -86,7 +83,6 @@ public class Main {
         studentService.insertStudent(student);
         System.out.println(student);
     }
-
 
     public static void menu() {
         System.out.println("===Menu===");

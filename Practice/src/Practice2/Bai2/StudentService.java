@@ -1,8 +1,10 @@
-package Pratice2.Bai2;
+package Practice2.Bai2;
 
-import Collection.Bai2.Product;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class StudentService {
     private final Map<String, Student> studentIntegerMap = new HashMap<>();
@@ -37,12 +39,13 @@ public class StudentService {
     public void sortAverageScoreRaise() {
         List<Student> studentList = new ArrayList<>(studentIntegerMap.values());
         studentList.sort(Comparator.comparingDouble(Student::getAverageScore));
-        System.out.println("Sap xep theo tang dan" +studentList);
+        System.out.println("Sap xep theo tang dan" + studentList);
     }
+
     public void sortAverageScoreReduce() {
         List<Student> studentList = new ArrayList<>(studentIntegerMap.values());
         studentList.sort(Comparator.comparingDouble(Student::getAverageScore).reversed());
-        System.out.println("Sap xep theo giam dan" +studentList);
+        System.out.println("Sap xep theo giam dan" + studentList);
     }
 
     public void findStudenScore(String studentId, double averageScore) {

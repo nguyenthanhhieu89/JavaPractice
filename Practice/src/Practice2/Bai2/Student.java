@@ -1,4 +1,4 @@
-package Pratice2.Bai2;
+package Practice2.Bai2;
 
 public class Student {
     private String studentId;

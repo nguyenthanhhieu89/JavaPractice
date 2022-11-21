@@ -1,4 +1,4 @@
-package Collection.Bai2;
+package Practice1.Bai2;
 
 public class Product {
     private String productId;

@@ -1,4 +1,4 @@
-package Collection.Bai1;
+package Practice1.Bai1;
 
 import java.util.*;
 

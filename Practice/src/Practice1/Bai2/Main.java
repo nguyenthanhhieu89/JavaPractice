@@ -1,6 +1,6 @@
-package Collection.Bai2;
+package Practice1.Bai2;
 
-import Collection.Service.ProductService;
+import Practice1.Bai2.Service.ProductService;
 
 import java.util.Scanner;
 

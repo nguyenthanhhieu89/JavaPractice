@@ -1,6 +1,6 @@
-package Collection.Service;
+package Practice1.Bai2.Service;
 
-import Collection.Bai2.Product;
+import Practice1.Bai2.Product;
 
 import java.util.*;
 

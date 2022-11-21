@@ -1,3 +1,5 @@
+package BlackHole;
+
 public class User {
     public int userId = 0;
     private String userName;
@@ -29,7 +31,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "BlackHole.User{" +
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 '}';

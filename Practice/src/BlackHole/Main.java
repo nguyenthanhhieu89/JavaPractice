@@ -1,3 +1,5 @@
+package BlackHole;
+
 import java.util.*;
 
 public class Main extends User{
