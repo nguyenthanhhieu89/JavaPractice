@@ -26,12 +26,18 @@ public class Main {
                 case 5:
                     doSortAverageScorereduce(studentService);
                     break;
+                case 6 :
+                    doPrintfMaxScore(studentService);
                 default:
                     System.exit(0);
                     break;
 
             }
         } while (true);
+    }
+
+    private static void doPrintfMaxScore(StudentService studentService) {
+        studentService.findStudenScore();
     }
 
     private static void doSortAverageScorereduce(StudentService studentService) {
