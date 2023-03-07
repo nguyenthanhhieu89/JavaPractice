@@ -1,10 +1,6 @@
 package Practice2.Bai2;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class StudentService {
     private final Map<String, Student> studentIntegerMap = new HashMap<>();
@@ -14,7 +10,11 @@ public class StudentService {
             return;
         }
         Student student = studentIntegerMap.get(studentInput.getStudentId());
-        studentIntegerMap.put(studentInput.getStudentId(), studentInput);
+        if (student == null) {
+            studentIntegerMap.put(studentInput.getStudentId(), studentInput);
+        } else {
+            System.out.println("Da co sinh vien nay !");
+        }
     }
 
     public Student findStudent(String studentId) {
@@ -48,9 +48,11 @@ public class StudentService {
         System.out.println("Sap xep theo giam dan" + studentList);
     }
 
-    public void findStudenScore(String studentId, double averageScore) {
-
+    public void findStudenScore() {
+        List<Student> studentList = new ArrayList<>(studentIntegerMap.values());
+        studentList.sort(Comparator.comparingDouble(Student::getAverageScore));
+        for (int i = 0; i < studentList.size(); i++) {
+            System.out.println("Sinh vien co diem trung binh lon nhat la " + studentList.lastIndexOf(i));
+        }
     }
-
-
 }
