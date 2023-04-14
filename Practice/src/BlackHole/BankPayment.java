@@ -13,6 +13,9 @@ public class BankPayment {
         TOTAL_LOAN -= 100000;
         INTEREST_RATE_PER_MONTH = 0.115 / 12;
         calculating(2);
+        TOTAL_LOAN -= 100000;
+        calculating(3);
+        calculating(4);
     }
 
     static void calculating(int year) {
